@@ -18,83 +18,17 @@
     "givenName": "Mario",
     "familyName": "Rossi",
     "email": "mario.rossi@example.com",
-    "address": {
-      "addressCountry": "IT"
-    },
+    "address": { "addressCountry": "IT" },
     "title": "Senior Oracle APEX Consultant",
     "summary": "Sviluppo applicazioni cloud-native su Oracle APEX e OCI.",
     "status": "PUBLISHED",
     "image": "https://api.radicle.services/orf/profile/123/photo",
-
-    "workExperience": [
-      {
-        "id": "urn:orf:exp:1",
-        "type": "WorkExperience",
-        "employer": "Radicle",
-        "jobTitle": "Senior Developer",
-        "startDate": "2018-01",
-        "endDate": null,
-        "description": "Sviluppo soluzioni APEX e integrazioni Oracle Fusion."
-      }
-    ],
-
-    "education": [
-      {
-        "id": "urn:orf:edu:1",
-        "type": "LearningAchievement",
-        "title": "Laurea in Ingegneria",
-        "awardingBody": "Politecnico",
-        "eqfLevel": "6",
-        "startDate": "2000-10",
-        "endDate": "2005-07"
-      }
-    ],
-
-    "skills": [
-      {
-        "id": "urn:orf:skill:10",
-        "type": "Skill",
-        "preferredLabel": "Oracle APEX",
-        "proficiencyLevel": "expert"
-      }
-    ],
-
-    "languages": [
-      {
-        "type": "LanguageSkill",
-        "lang": "it",
-        "proficiency": "C2",
-        "isNative": "Y"
-      }
-    ],
-
-    "links": [
-      {
-        "type": "WebPage",
-        "label": "LinkedIn",
-        "url": "https://www.linkedin.com/in/mario-rossi"
-      }
-    ],
-
-    "projects": [
-      {
-        "id": "urn:orf:project:1",
-        "name": "Portale HR Cloud",
-        "role": "Solution Architect",
-        "startDate": "2022-01",
-        "endDate": "2023-06",
-        "description": "Implementazione portale CV multitenant basato su Open Resume."
-      }
-    ],
-
-    "credentials": [
-      {
-        "id": "urn:orf:credential:1",
-        "type": "CERTIFICATION",
-        "title": "Oracle APEX Developer Professional",
-        "issuerName": "Oracle",
-        "issueDate": "2024-03-10"
-      }
-    ]
+    "workExperience": [],
+    "education": [],
+    "skills": [],
+    "languages": [],
+    "links": [],
+    "projects": [],
+    "credentials": []
   }
 }
