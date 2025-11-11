@@ -1,0 +1,20 @@
+-- Esempio handler ORDS per GET /api/orf/profiles/{id}
+
+DECLARE
+    l_id        NUMBER := :id;
+    l_json      CLOB;
+BEGIN
+    SELECT json_serialize(v FORMAT JSON)
+      INTO l_json
+      FROM orf_openresume_v v
+     WHERE JSON_VALUE(v, '$.id')
+           = 'urn:orf:profile:' || l_id;
+
+    :status_code  := 200;
+    :content_type := 'application/ld+json';
+    :body         := l_json;
+EXCEPTION
+    WHEN NO_DATA_FOUND THEN
+        :status_code := 404;
+END;
+/
