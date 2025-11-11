@@ -1,0 +1,39 @@
+openapi: 3.0.3
+info:
+  title: Radicle Open Resume 2.0 API
+  version: 1.0.0
+servers:
+  - url: https://api.radicle.services
+paths:
+  /api/orf/profiles:
+    get:
+      summary: List profiles for current tenant
+      responses:
+        '200':
+          description: List of profiles
+  /api/orf/profiles/{id}:
+    get:
+      summary: Get Open Resume JSON-LD for profile
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema: { type: integer }
+      responses:
+        '200':
+          description: Open Resume JSON-LD
+          content:
+            application/ld+json: {}
+  /api/orf/profiles/{id}/photo:
+    get:
+      summary: Get profile photo
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema: { type: integer }
+      responses:
+        '200':
+          description: Profile photo
+          content:
+            image/*: {}
