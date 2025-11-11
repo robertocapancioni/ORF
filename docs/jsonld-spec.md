@@ -21,7 +21,7 @@ Il documento ORF utilizza un array di contesti per combinare standard esistenti 
   "https://schema.org",
   "https://radicle.services/openresume/context/v2"
 ]
-
+```
 Significato:
 
 *   **W3C Verifiable Credentials** – compatibilità con estensioni VC.
