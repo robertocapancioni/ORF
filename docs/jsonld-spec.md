@@ -81,7 +81,8 @@ Campi:
 
 Esempio:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   "credentialSubject": {    "id": "urn:orf:person:42",    "type": ["Person"],    "givenName": "Mario",    "familyName": "Rossi",    "email": "mario.rossi@example.com",    "address": {      "addressCountry": "IT"    }  }   `
+```json "credentialSubject": {    "id": "urn:orf:person:42",    "type": ["Person"],    "givenName": "Mario",    "familyName": "Rossi",    "email": "mario.rossi@example.com",    "address": {      "addressCountry": "IT"    }  }
+```
 
 ### 3.2. Dati di profilo
 
