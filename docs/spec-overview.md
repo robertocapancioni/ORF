@@ -1,49 +1,24 @@
-Entità principali
+# Radicle Open Resume 2.0 – Spec Overview
 
-orf_tenant
-Identifica l’organizzazione / cliente.
+Radicle Open Resume 2.0 (ORF) è uno standard aperto per rappresentare CV e profili professionali:
 
-orf_person
-Dati anagrafici del candidato/utente.
+- Basato su Oracle Database 23ai.
+- Esportabile in JSON-LD compatibile con standard moderni (schema.org, Europass/ELM).
+- Multi-tenant nativo.
+- Estendibile a Verifiable Credentials.
 
-orf_profile
-Un CV/profilo per persona, con stato (DRAFT / PUBLISHED / ARCHIVED), pubblicazione e foto.
+## Componenti principali
 
-orf_experience
-Esperienze lavorative.
+- Modello relazionale `orf_*`
+- Trigger standard per:
+  - `tenant_id`
+  - metadati `created`, `created_by`, `updated`, `updated_by`
+- JSON Relational Duality View `orf_openresume_v`
+- API REST per esposizione e integrazione
+- Esempio JSON-LD di riferimento
 
-orf_education
-Titoli di studio / formazione.
+Per i dettagli tecnici vedi:
 
-orf_skill + orf_profile_skill
-Skill strutturate, con eventuale link ad ESCO.
-
-orf_language
-Competenze linguistiche.
-
-orf_profile_link
-Link a portfolio, GitHub, LinkedIn, ecc.
-
-orf_project
-Progetti significativi.
-
-orf_credential
-Certificazioni / attestati, con hook per JSON-LD Verifiable Credential.
-
-Caratteristiche tecniche
-
-PK ovunque = id
-
-tenant_id in tutte le tabelle ORF → multi-tenant forte
-
-FK composite (tenant_id, fk_id) → nessuna contaminazione tra clienti
-
-Metadati tecnici standard:
-
-created, created_by, updated, updated_by (a trigger, no logica business)
-
-Foto profilo:
-
-orf_profile.photo (BLOB) + photo_mime_type
-
-esposta via endpoint dedicato, referenziata nel JSON come image.
+- `docs/data-model.md`
+- `docs/jsonld-spec.md`
+- `docs/integration-guide.md`
