@@ -1,0 +1,29 @@
+{
+  "info": {
+    "name": "Radicle Open Resume 2.0",
+    "_postman_id": "orf-openresume-collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get Profile JSON-LD",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/orf/profiles/123",
+        "header": [
+          { "key": "Accept", "value": "application/ld+json" }
+        ]
+      }
+    },
+    {
+      "name": "Get Profile Photo",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/orf/profiles/123/photo"
+      }
+    }
+  ],
+  "variable": [
+    { "key": "baseUrl", "value": "https://api.radicle.services" }
+  ]
+}
